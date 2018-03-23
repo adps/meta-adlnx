@@ -1,0 +1,1 @@
+KERNEL=="adz2*", OWNER="root", GROUP="root", MODE="0664"
