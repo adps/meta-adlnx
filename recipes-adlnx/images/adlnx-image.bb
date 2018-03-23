@@ -1,5 +1,5 @@
 require recipes-core/images/core-image-minimal.bb
 
-IMAGE_INSTALL += "libstdc++ adz1 startup"
+IMAGE_INSTALL += "libstdc++ adz2 startup mtd-utils"
 IMAGE_INSTALL += "openssh openssl openssh-sftp-server"
-IMAGE_INSTALL += "gdb gdbserver"
+IMAGe_INSTALL += "cifs-utils"
