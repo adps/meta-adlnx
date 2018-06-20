@@ -1,8 +1,7 @@
-#!/bin/ash
 
 #Mount SD card
 mount /dev/mmcblk0p1 /mnt/
 
 #Run user startup script
-
 /mnt/startup_script.sh
+
