@@ -6,5 +6,6 @@ FILESEXTRAPATHS_append := "${THISDIR}/files"
 
 SRC_URI += " \
 	file://adlnx-image.cfg \
+	file://displayport-timeout-fix.patch \
 	"
 
