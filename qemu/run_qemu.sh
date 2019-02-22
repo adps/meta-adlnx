@@ -13,7 +13,7 @@ $QEMU_PATH/aarch64-softmmu/qemu-system-aarch64 \
   -device loader,file=./prebuilt/linux-boot.elf \
   -gdb tcp::9000 \
   -dtb ./prebuilt/qemu_admvpx39z.dtb \
-  -net nic -net nic -net nic -net nic,vlan=1 -net user,vlan=1,tftp=./ \
+  -net nic -net nic -net nic -net nic -net user,tftp=./qemu_tftp,hostfwd=tcp::10022-:22 \
   -hw-dtb ./prebuilt/zynqmp-qemu-multiarch-arm.dtb \
   -global xlnx,zynqmp-boot.cpu-num=0 -global xlnx,zynqmp-boot.use-pmufw=true \
   -machine-path ./qemu_tmp \
