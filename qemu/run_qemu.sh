@@ -6,7 +6,7 @@ fi
 mkdir qemu_tmp
 
 $QEMU_PATH/aarch64-softmmu/qemu-system-aarch64 \
-  -M arm-generic-fdt -serial mon:stdio -serial /dev/null -display none \
+  -M arm-generic-fdt -serial mon:stdio -serial /dev/null -display sdl \
   -device loader,file=./prebuilt/bl31.elf,cpu-num=0 \
   -kernel Image-initramfs-admvpx39z.bin \
   -device loader,file=./prebuilt/qemu_admvpx39z.dtb,addr=0x1407f000 \

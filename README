@@ -9,25 +9,29 @@ Dependencies
 
 This layer depends on:
 
-  URI: git://git.openembedded.org/bitbake
-  branch: master
+  URI: git://git.yoctoproject.org/poky
+  branch: thud
 
   URI: git://git.openembedded.org/openembedded-core
   layers: meta
-  branch: master
+  branch: thud
 
-  URI: git://git.yoctoproject.org/xxxx
-  layers: xxxx
-  branch: master
+  URI: https://github.com/Xilinx/meta-xilinx.git
+  layers: meta-xilinx-bsp
+  branch: thud
+
+  URI: https://github.com/adps/meta-admvpx39z
+  branch: thud
+
 
 
 Patches
 =======
 
-Please submit any patches against the ad-datacard layer to the
-xxxx mailing list (xxxx@zzzz.org) and cc: the maintainer:
+Please submit any patches against the ad-datacard layer to
+maintainer:
 
-Maintainer: XXX YYYYYY <xxx.yyyyyy@zzzzz.com>
+Maintainer: Christopher Holyoake <ch@alpha-data.com>
 
 
 Table of Contents
@@ -51,6 +55,10 @@ location of the ad-datacard layer to bblayers.conf, along with any
 other layers needed. e.g.:
 
   BBLAYERS ?= " \
+     /path/to/openembedded-core/meta \
+    /path/to/meta-xilinx/meta-xilinx-bsp \
+    /path/to/meta-adlnx \
+    /path/to/meta-admvpx39z \
     /path/to/yocto/meta \
     /path/to/yocto/meta-yocto \
     /path/to/yocto/meta-yocto-bsp \

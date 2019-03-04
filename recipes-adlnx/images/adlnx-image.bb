@@ -10,4 +10,4 @@ IMAGE_INSTALL += "e2fsprogs-e2fsck e2fsprogs-mke2fs e2fsprogs-tune2fs e2fsprogs"
 IMAGE_INSTALL += "xserver-xorg xset xrandr libdrm"
 IMAGE_INSTALL += "xinit xauth xinput xeyes"
 IMAGE_INSTALL += "xf86-input-evdev xf86-input-mouse xf86-input-keyboard"
-
+IMAGE_INSTALL += "xf86-video-armsoc"
