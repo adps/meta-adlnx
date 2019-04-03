@@ -5,7 +5,7 @@ LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda
 
 FILESEXTRAPATHS_append := "${THISDIR}/init-ifupdown-1.0"
 
-SRC_URI = "              \	
+SRC_URI += "              \	
         file://interfaces \
    "
 
