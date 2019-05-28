@@ -17,5 +17,6 @@ $QEMU_PATH/aarch64-softmmu/qemu-system-aarch64 \
   -hw-dtb ./prebuilt/zynqmp-qemu-multiarch-arm.dtb \
   -global xlnx,zynqmp-boot.cpu-num=0 -global xlnx,zynqmp-boot.use-pmufw=true \
   -machine-path ./qemu_tmp \
-  -m 4G
+  -m 4G \
+  -device qemu-xhci
 
