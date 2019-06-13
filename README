@@ -1,3 +1,5 @@
+Warining: This branch is still under development
+
 This README file contains information on the contents of the
 ad-datacard layer.
 
@@ -20,7 +22,7 @@ This layer depends on:
   layers: meta-xilinx-bsp
   branch: thud
 
-  URI: https://github.com/adps/meta-admvpx39z
+  URI: https://github.com/adps/meta-admxrc9r1
   branch: thud
 
 
@@ -58,11 +60,10 @@ other layers needed. e.g.:
      /path/to/openembedded-core/meta \
     /path/to/meta-xilinx/meta-xilinx-bsp \
     /path/to/meta-adlnx \
-    /path/to/meta-admvpx39z \
+    /path/to/meta-admxrc9r1 \
     /path/to/yocto/meta \
     /path/to/yocto/meta-yocto \
     /path/to/yocto/meta-yocto-bsp \
-    /path/to/yocto/meta-ad-datacard \
     "
 
 
